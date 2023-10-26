@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    /> -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>SoftDreams</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="navbar">
+          <i class="bx bx-menu">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"
+              />
+            </svg>
+          </i>
+          <div class="logo">
+            <a href="#"
+              ><img
+                src="http://softdreams.vn/wp-content/uploads/2023/10/Group-1.png"
+                alt=""
+            /></a>
+          </div>
+          <div class="nav-links">
+            <div class="sidebar-logo">
+              <span class="logo-name">Logo</span>
+              <i class="bx bx-x">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="m16.192 6.344l-4.243 4.242l-4.242-4.242l-1.414 1.414L10.535 12l-4.242 4.242l1.414 1.414l4.242-4.242l4.243 4.242l1.414-1.414L13.364 12l4.242-4.242z"
+                  />
+                </svg>
+              </i>
+            </div>
+            <!-- Header cho mobile -->
+            <!-- <ul class="links">
+                     <li>
+                       <a href="#">Giải pháp</a>
+                       <i class="bx bxs-chevron-down htmlcss-arrow arrow">
+                         <svg
+                           xmlns="http://www.w3.org/2000/svg"
+                           width="24"
+                           height="24"
+                           viewBox="0 0 24 24"
+                         >
+                           <path
+                             fill="currentColor"
+                             d="M16.293 9.293L12 13.586L7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"
+                           />
+                         </svg>
+                       </i>
+                        <ul class="htmlCss-sub-menu sub-menu">                  
+                         <li class="more">
+                           <span
+                             ><a href="#">Tài chính kế toán</a>
+                             <i class="bx bxs-chevron-right arrow more-arrow">
+                               <svg
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 width="24"
+                                 height="24"
+                                 viewBox="0 0 24 24"
+                               >
+                                 <path
+                                   fill="currentColor"
+                                   d="M16.293 9.293L12 13.586L7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"
+                                 />
+                               </svg>
+                             </i>
+                           </span>
+                           <ul class="more-sub-menu sub-menu">
+                             <li><a href="#">EasyBooks</a></li>
+                             <li><a href="#">EasyInvoice</a></li>
+                             <li><a href="#">EasyPIT</a></li>
+                             <li><a href="#">EasyTicket</a></li>
+                           </ul>
+                         </li>
+                         <li class="more">
+                           <span
+                             ><a href="#">Quản trị điều hành</a>
+                             <i class="bx bxs-chevron-right arrow more-arrow">
+                               <svg
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 width="24"
+                                 height="24"
+                                 viewBox="0 0 24 24"
+                               >
+                                 <path
+                                   fill="currentColor"
+                                   d="M16.293 9.293L12 13.586L7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"
+                                 />
+                               </svg>
+                             </i>
+                           </span>
+                           <ul class="more-sub-menu sub-menu">
+                             <li><a href="#">EasyHRM</a></li>
+                             <li><a href="#">EasyPOS</a></li>
+                             <li><a href="#">EasyCA</a></li>
+                             <li><a href="#">EasyDocs</a></li>
+                             <li><a href="#">EasyCRM</a></li>
+                           </ul>
+                         </li>
+                         <li class="more">
+                           <span
+                             ><a href="#">Dự án CNTT</a>
+                             <i class="bx bxs-chevron-right arrow more-arrow">
+                               <svg
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 width="24"
+                                 height="24"
+                                 viewBox="0 0 24 24"
+                               >
+                                 <path
+                                   fill="currentColor"
+                                   d="M16.293 9.293L12 13.586L7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"
+                                 />
+                               </svg>
+                             </i>
+                           </span>
+                           <ul class="more-sub-menu sub-menu">
+                             <li><a href="#">EasyKYC</a></li>
+                             <li><a href="#">CICB</a></li>
+                           </ul>
+                         </li>
+                       </ul>             
+                     </li>             
+                     <li><a href="#">Tài liệu</a></li>
+                     <li><a href="#">Hợp tác</a></li>
+                     <li><a href="#">Tin tức</a></li>
+                     </ul> -->
+            <!-- Header cho desktop -->
+            <ul class="links">
+              <li class="header-solution-nav">
+                <a href="#">Giải pháp</a>
+                <ul class="htmlCss-sub-menu sub-menu solution-submenu">
+                  <div class="container">
+                    <div class="solution-box">
+                      <div class="row">
+                        <div class="col-md-4 solution-nav-title">
+                          Tài chính kế toán
+                        </div>
+                        <div class="col-md-4 solution-nav-title">
+                          Quản trị điều hành
+                        </div>
+                        <div class="col-md-4 solution-nav-title">
+                          Dự án CNTT
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-4">
+                          <ul>
+                            <a href="">
+                              <div
+                                style="display: flex; align-items: center"
+                                class="software-row"
+                              >
+                                <img
+                                  src="http://softdreams.vn/wp-content/uploads/2023/10/Group-2.png"
+                                  alt=""
+                                />
+                                <div class="software">
+                                  <div class="software-title">EasyBooks</div>
+                                  <div class="software-des">
+                                    Phần mềm kế toán
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+                            <a href="">
+                              <div
+                                style="display: flex; align-items: center"
+                                class="software-row"
+                              >
+                                <img
+                                  src="http://softdreams.vn/wp-content/uploads/2023/10/Frame.png"
+                                  alt=""
+                                />
+                                <div class="software">
+                                  <div class="software-title">EasyInvoice</div>
+                                  <div class="software-des">
+                                    Phần mềm hóa đơn điện tử
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+                            <a href="">
+                              <div
+                                style="display: flex; align-items: center"
+                                class="software-row"
+                              >
+                                <img
+                                  src="http://softdreams.vn/wp-content/uploads/2023/10/Frame-1.png"
+                                  alt=""
+                                />
+                                <div class="software">
+                                  <div class="software-title">EasyPIT</div>
+                                  <div class="software-des">
+                                    Khấu trừ thuế TNCN
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+                            <a href="">
+                              <div
+                                style="display: flex; align-items: center"
+                                class="software-row"
+                              >
+                                <img
+                                  src="http://softdreams.vn/wp-content/uploads/2023/10/Frame-2.png"
+                                  alt=""
+                                />
+                                <div class="software">
+                                  <div class="software-title">EasyTicket</div>
+                                  <div class="software-des">
+                                    Phần mềm đặt vé điện tử
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+                          </ul>
+                        </div>
+                        <div class="col-md-4">
+                          <ul>
+                            <a href="">
+                              <div
+                                style="display: flex; align-items: center"
+                                class="software-row"
+                              >
+                                <img
+                                  src="http://softdreams.vn/wp-content/uploads/2023/10/Frame-3.png"
+                                  alt=""
+                                />
+                                <div class="software">
+                                  <div class="software-title">EasyHRM</div>
+                                  <div class="software-des">
+                                    Phần mềm quản trị nhân lực
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+                            <a href="">
+                              <div
+                                style="display: flex; align-items: center"
+                                class="software-row"
+                              >
+                                <img
+                                  src="http://softdreams.vn/wp-content/uploads/2023/10/Frame-4.png"
+                                  alt=""
+                                />
+                                <div class="software">
+                                  <div class="software-title">EasyPOS</div>
+                                  <div class="software-des">
+                                    Phần mềm bán hàng
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+                            <a href="">
+                              <div
+                                style="display: flex; align-items: center"
+                                class="software-row"
+                              >
+                                <img
+                                  src="http://softdreams.vn/wp-content/uploads/2023/10/Frame-5.png"
+                                  alt=""
+                                />
+                                <div class="software">
+                                  <div class="software-title">EasyCA</div>
+                                  <div class="software-des">
+                                    Phần mềm chữ ký số
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+                            <a href="">
+                              <div
+                                style="display: flex; align-items: center"
+                                class="software-row"
+                              >
+                                <img
+                                  src="http://softdreams.vn/wp-content/uploads/2023/10/Group-3.png"
+                                  alt=""
+                                />
+                                <div class="software">
+                                  <div class="software-title">EasyDocs</div>
+                                  <div class="software-des">
+                                    Phần mềm hợp đồng điện tử
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+                            <a href="">
+                              <div
+                                style="display: flex; align-items: center"
+                                class="software-row"
+                              >
+                                <img
+                                  src="http://softdreams.vn/wp-content/uploads/2023/10/Frame-5.png"
+                                  alt=""
+                                />
+                                <div class="software">
+                                  <div class="software-title">EasyCRM</div>
+                                  <div class="software-des">
+                                    Phần mềm quản lý khách hàng
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+                          </ul>
+                        </div>
+                        <div class="col-md-4">
+                          <ul>
+                            <a href="">
+                              <div
+                                style="display: flex; align-items: center"
+                                class="software-row"
+                              >
+                                <img
+                                  src="http://softdreams.vn/wp-content/uploads/2023/10/Group.png"
+                                  alt=""
+                                />
+                                <div class="software">
+                                  <div class="software-title">EasyKYC</div>
+                                  <div class="software-des">
+                                    Xác thực khách hàng
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+                            <a href="">
+                              <div
+                                style="display: flex; align-items: center"
+                                class="software-row"
+                              >
+                                <img
+                                  src="http://softdreams.vn/wp-content/uploads/2023/10/Frame-6.png"
+                                  alt=""
+                                />
+                                <div class="software">
+                                  <div class="software-title">CICB</div>
+                                  <div class="software-des">
+                                    Kết nối khách hàng vay
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </ul>
+              </li>
+              <li class="header-nav"><a href="#">Tài liệu</a></li>
+              <li class="header-nav"><a href="#">Hợp tác</a></li>
+              <li class="header-nav"><a href="#">Tin tức</a></li>
+              <li class="header-nav"><a href="#">Công ty</a></li>
+              <li class="header-nav"><a href="#">Tuyển dụng</a></li>
+            </ul>
+          </div>
+          <div class="search-box">
+            <i class="bx bx-search"></i>
+            <div class="input-box">
+              <input type="text" placeholder="Search..." />
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <style></style>
+    <section id="sds_banner">
+      <img src="../Untitled.png" alt="" />
+    </section>
+    <section id="sds_featured">
+      <div class="container">
+        <div class="sds-title">
+          Hệ thống quản trị doanh nghiệp tinh giản hóa, <br />
+          <span class="spanblue">điều hành dễ dàng và tiện lợi</span>
+        </div>
+        <div class="sds-sub-title">
+          Hệ sinh thái của Softdreams có khả năng tích hợp đa nền tảng, tạo ra
+          trải nghiệm vượt trội về quản trị doanh nghiệp
+        </div>
+        <div class="sds-featured-box">
+          <img
+            src="http://softdreams.vn/wp-content/uploads/2023/10/Group-34017-1.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+    <section id="sds_number">
+      <div class="container">
+        <div class="number-title">Những con số biết nói</div>
+        <div class="row">
+          <div class="col-lg-3 col-sm-6 col-md-6">
+            <div class="number-box">
+              <div class="number">11+</div>
+              <div class="number-detail">Năm kinh nghiệm</div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-md-6">
+            <div class="number-box">
+              <div class="number">15+</div>
+              <div class="number-detail">Giải thưởng</div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-md-6">
+            <div class="number-box">
+              <div class="number">200+</div>
+              <div class="number-detail">Đại lý</div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-md-6">
+            <div class="number-box">
+              <div class="number">200.000+</div>
+              <div class="number-detail">Doanh nghiệp</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="sds_connection">
+      <div class="container">
+        <div class="connection-part">
+          <div class="connection-box">
+            <div class="connection-text">
+              Chạm để kết nối với hệ sinh thái của chúng tôi
+            </div>
+            <div class="text-center">
+              <button class="connection-btn">Dùng thử ngay!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="sds_partner">
+      <div class="sds-title">
+        Hơn <span class="spanblue">5000 đối tác</span> trên toàn quốc tin tưởng
+        <br />
+        lựa chọn Softdreams
+      </div>
+
+      <div class="container">
+        <div class="partner-box">
+          <div class="partner-element">
+            <img
+              src="http://softdreams.vn/wp-content/uploads/2023/10/Group-33974.png"
+              alt=""
+            />
+          </div>
+          <div class="partner-element">
+            <img
+              src="http://softdreams.vn/wp-content/uploads/2023/10/Group-33976.png"
+              alt=""
+            />
+          </div>
+          <div class="partner-element">
+            <img
+              src="http://softdreams.vn/wp-content/uploads/2023/10/Group-33977.png"
+              alt=""
+            />
+          </div>
+          <div class="partner-element">
+            <img
+              src="http://softdreams.vn/wp-content/uploads/2023/10/Group-33978.png"
+              alt=""
+            />
+          </div>
+          <div class="partner-element">
+            <img
+              src="http://softdreams.vn/wp-content/uploads/2023/10/Group-33979.png"
+              alt=""
+            />
+          </div>
+          <div class="partner-element">
+            <img
+              src="http://softdreams.vn/wp-content/uploads/2023/10/Group-33980.png"
+              alt=""
+            />
+          </div>
+          <div class="partner-element">
+            <img
+              src="http://softdreams.vn/wp-content/uploads/2023/10/Group-33981.png"
+              alt=""
+            />
+          </div>
+          <div class="partner-element">
+            <img
+              src="http://softdreams.vn/wp-content/uploads/2023/10/Group-33982.png"
+              alt=""
+            />
+          </div>
+          <div class="partner-element">
+            <img
+              src="http://softdreams.vn/wp-content/uploads/2023/10/Group-33983.png"
+              alt=""
+            />
+          </div>
+          <div class="partner-element">
+            <img
+              src="http://softdreams.vn/wp-content/uploads/2023/10/Group-33984.png"
+              alt=""
+            />
+          </div>
+          <div class="partner-element">
+            <img
+              src="http://softdreams.vn/wp-content/uploads/2023/10/Group-33974.png"
+              alt=""
+            />
+          </div>
+          <div class="partner-element">
+            <img
+              src="http://softdreams.vn/wp-content/uploads/2023/10/Group-33976.png"
+              alt=""
+            />
+          </div>
+          <div class="partner-element">
+            <img
+              src="http://softdreams.vn/wp-content/uploads/2023/10/Group-33977.png"
+              alt=""
+            />
+          </div>
+          <div class="partner-element">
+            <img
+              src="http://softdreams.vn/wp-content/uploads/2023/10/Group-33978.png"
+              alt=""
+            />
+          </div>
+          <div class="partner-element">
+            <img
+              src="http://softdreams.vn/wp-content/uploads/2023/10/Group-33979.png"
+              alt=""
+            />
+          </div>
+          <div class="partner-element">
+            <img
+              src="http://softdreams.vn/wp-content/uploads/2023/10/Group-33980.png"
+              alt=""
+            />
+          </div>
+          <div class="partner-element">
+            <img
+              src="http://softdreams.vn/wp-content/uploads/2023/10/Group-33981.png"
+              alt=""
+            />
+          </div>
+          <div class="partner-element">
+            <img
+              src="http://softdreams.vn/wp-content/uploads/2023/10/Group-33982.png"
+              alt=""
+            />
+          </div>
+          <div class="partner-element">
+            <img
+              src="http://softdreams.vn/wp-content/uploads/2023/10/Group-33983.png"
+              alt=""
+            />
+          </div>
+          <div class="partner-element">
+            <img
+              src="http://softdreams.vn/wp-content/uploads/2023/10/Group-33984.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="sds_pride">
+      <div class="container">
+        <div class="sds-title">
+          Tự hào <span class="spanblue">vinh danh</span>
+        </div>
+        <div class="pridebox">
+          <div class="pride-lefttree">
+            <img
+              src="http://softdreams.vn/wp-content/uploads/2023/10/lefttree.png"
+              alt=""
+            />
+          </div>
+          <div class="pride-certificate">
+            <img
+              src="http://softdreams.vn/wp-content/uploads/2023/10/certificate.png"
+              alt=""
+            />
+          </div>
+          <div class="pride-text-box">
+            <div class="pride-textblue">Danh hiệu</div>
+            <div class="pride-text">
+              ngành phần mềm và dịch vụ CNTT Việt Nam
+            </div>
+            <div class="pride-textblue">(I4.0 Awards)</div>
+          </div>
+          <div class="pride-righttree">
+            <img
+              src="http://softdreams.vn/wp-content/uploads/2023/10/righttree.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="sds_testimonials">
+      <div class="sds-title">
+        Khách hàng, đối tác nói gì về <span class="spanblue">Softdreams</span>
+      </div>
+      <div style="margin-top: 4rem" class="container swiper-container">       
+        <main class="main">
+          <!-- Muốn chỉnh pagination thì phải vào file swipercustom.js rồi tìm thuộc tính swiper-pagination nhé! -->
+          <swiper-container
+            class="mySwiper"
+            autoplay-delay="1500"
+            autoplay-disable-on-interaction="false"
+            space-between="30"
+          >
+            <swiper-slide>
+              <div class="swiper-box">
+                <div class="swiper-avt">
+                  <img
+                    src="http://softdreams.vn/wp-content/uploads/2023/10/Ellipse-255.png"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-testimonials">
+                  “Từ khi chuyển qua EasyHRM, việc quản lý nhân sự trở nên dễ
+                  dàng lại tiết kiệm chi phí đáng kể cho doanh nghiệp.”
+                </div>
+                <div class="seperate-testimonials"></div>
+                <div class="swiper-author">Chị Phương 1</div>
+                <div class="swiper-position">
+                  Trưởng phòng HCNS tại Thế giới Sofa
+                </div>
+              </div>
+            </swiper-slide>
+            <swiper-slide>
+              <div class="swiper-box">
+                <div class="swiper-avt">
+                  <img
+                    src="http://softdreams.vn/wp-content/uploads/2023/10/Ellipse-255-2.png"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-testimonials">
+                  “Từ khi chuyển qua EasyHRM, việc quản lý nhân sự trở nên dễ
+                  dàng lại tiết kiệm chi phí đáng kể cho doanh nghiệp.”
+                </div>
+                <div class="seperate-testimonials"></div>
+                <div class="swiper-author">Chị Phương 2</div>
+                <div class="swiper-position">
+                  Trưởng phòng HCNS tại Thế giới Sofa
+                </div>
+              </div>
+            </swiper-slide>
+            <swiper-slide>
+              <div class="swiper-box">
+                <div class="swiper-avt">
+                  <img
+                    src="http://softdreams.vn/wp-content/uploads/2023/10/Ellipse-255-1.png"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-testimonials">
+                  “Từ khi chuyển qua EasyHRM, việc quản lý nhân sự trở nên dễ
+                  dàng lại tiết kiệm chi phí đáng kể cho doanh nghiệp.”
+                </div>
+                <div class="seperate-testimonials"></div>
+                <div class="swiper-author">Chị Phương 3</div>
+                <div class="swiper-position">
+                  Trưởng phòng HCNS tại Thế giới Sofa
+                </div>
+              </div>
+            </swiper-slide>
+            <swiper-slide>
+              <div class="swiper-box">
+                <div class="swiper-avt">
+                  <img
+                    src="http://softdreams.vn/wp-content/uploads/2023/10/Ellipse-255.png"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-testimonials">
+                  “Từ khi chuyển qua EasyHRM, việc quản lý nhân sự trở nên dễ
+                  dàng lại tiết kiệm chi phí đáng kể cho doanh nghiệp.”
+                </div>
+                <div class="seperate-testimonials"></div>
+                <div class="swiper-author">Chị Phương 4</div>
+                <div class="swiper-position">
+                  Trưởng phòng HCNS tại Thế giới Sofa
+                </div>
+              </div>
+            </swiper-slide>
+            <swiper-slide>
+              <div class="swiper-box">
+                <div class="swiper-avt">
+                  <img
+                    src="http://softdreams.vn/wp-content/uploads/2023/10/Ellipse-255.png"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-testimonials">
+                  “Từ khi chuyển qua EasyHRM, việc quản lý nhân sự trở nên dễ
+                  dàng lại tiết kiệm chi phí đáng kể cho doanh nghiệp.”
+                </div>
+                <div class="seperate-testimonials"></div>
+                <div class="swiper-author">Chị Phương 5</div>
+                <div class="swiper-position">
+                  Trưởng phòng HCNS tại Thế giới Sofa
+                </div>
+              </div>
+            </swiper-slide>
+            <swiper-slide>
+              <div class="swiper-box">
+                <div class="swiper-avt">
+                  <img
+                    src="http://softdreams.vn/wp-content/uploads/2023/10/Ellipse-255.png"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-testimonials">
+                  “Từ khi chuyển qua EasyHRM, việc quản lý nhân sự trở nên dễ
+                  dàng lại tiết kiệm chi phí đáng kể cho doanh nghiệp.”
+                </div>
+                <div class="seperate-testimonials"></div>
+                <div class="swiper-author">Chị Phương 6</div>
+                <div class="swiper-position">
+                  Trưởng phòng HCNS tại Thế giới Sofa
+                </div>
+              </div>
+            </swiper-slide>
+          </swiper-container>
+
+          <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script> -->
+          <script src="./assets/js/swipercustom.js"></script>
+        </main>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <img
+          style="margin-bottom: 3.2rem"
+          src="http://softdreams.vn/wp-content/uploads/2023/10/Frame-1-1.png"
+          alt=""
+        />
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="footer-slogan">NÂNG TẦM QUẢN TRỊ DOANH NGHIỆP</div>
+            <ul>
+              <li class="footer-text-list">
+                Trụ sở chính: Nhà khách ATS, số 8 Phạm Hùng, Phường Mễ Trì, Quận
+                Nam Từ Liêm, Hà Nội
+              </li>
+              <li class="footer-text-list">
+                Chi nhánh: Số H.46 đường Dương Thị Giang, Phường Tân Thới Nhất,
+                Quận 12, TP. Hồ Chí Minh
+              </li>
+              <li class="footer-text-list">contact@softdreams.vn</li>
+              <li class="footer-text-list">0981 772 388 – 1900 56 56 53</li>
+            </ul>
+            <div class="connectwithus">
+              Kết nối với chúng tôi
+              <div class="connect-list-icon mt-2">
+                <img
+                  src="http://softdreams.vn/wp-content/uploads/2023/10/fb.png"
+                  alt=""
+                />
+                <img
+                  src="http://softdreams.vn/wp-content/uploads/2023/10/call.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="footer-small-title">Mục Lục</div>
+            <ul>
+              <li class="footer-text-list">Giới thiệu</li>
+              <li class="footer-text-list">Hệ sinh thái</li>
+              <li class="footer-text-list">Hệ thống</li>
+              <li class="footer-text-list">Đối tác</li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <div class="footer-small-title">Chính sách mua hàng</div>
+            <ul>
+              <li class="footer-text-list">Chính sách bảo mật</li>
+              <li class="footer-text-list">Chính sách mua hàng</li>
+              <li class="footer-text-list">Chính sách bảo hành, hậu mãi</li>
+            </ul>
+          </div>
+        </div>
+        <div class="seperate-footer"></div>
+        <div class="copyright">
+          Copyright © 2019 SoftDreams. All rights reserved
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/textfit/2.4.0/textFit.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
