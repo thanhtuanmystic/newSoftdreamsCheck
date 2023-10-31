@@ -25,6 +25,38 @@ a {
 li {
   list-style: none;
 }
+.center-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Animation */
+.slide-left {
+  animation: slide-left 1s linear forwards;
+}
+@keyframes slide-left {
+  0% {
+    transform: translate(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0px);
+    opacity: 1;
+  }
+}
+.slide-right {
+  animation: slide-right 1s linear forwards;
+}
+@keyframes slide-right {
+  0% {
+    transform: translate(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0px);
+    opacity: 1;
+  }
+}
 /* Header */
 /* Googlefont Poppins CDN Link */
 * {
@@ -241,11 +273,15 @@ nav .navbar .links li:hover .js-sub-menu {
   display: none;
 }
 .software-row {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  width: 25rem;
 }
 .software-row:hover {
-  opacity: 0.8;
+  /* opacity: 0.8; */
   cursor: pointer;
+  border-radius: 4px;
+  background: var(--primary-5, #fdeee9);
 }
 .solution-box {
   padding: 2rem 0;
@@ -411,103 +447,97 @@ nav .navbar .links li:hover .js-sub-menu {
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
-  padding: 2rem 0 0 0;
+  padding: 0 0 5rem 0;
 }
 #sds_banner img {
   max-width: 100%;
 }
 /* Những con số biết nói */
 #sds_number {
-  background-image: url("http://softdreams.vn/wp-content/uploads/2023/10/Group-34018.png");
-  height: 30rem;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  margin: 5rem 0;
+  padding: 5rem 0;
+  position: relative;
 }
-.number-box {
+.number-col {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.number-info {
+  display: flex;
   flex-direction: column;
 }
-.number-title {
-  color: #fff;
-  text-align: center;
+.number-info-number {
+  color: var(--primary-2, #ea5626);
   font-family: Nunito Sans;
   font-size: 3rem;
   font-style: normal;
-  font-weight: 700;
-  line-height: 150%; /* 45px */
-  margin-bottom: 3.2rem;
+  font-weight: 900;
+  line-height: normal;
 }
-.number {
-  color: #fff;
-  font-family: Nunito Sans;
-  font-size: 4.8rem;
-  font-style: normal;
-  font-weight: 800;
-  line-height: 150%; /* 72px */
-}
-.number-detail {
-  color: var(--primary-5, #fdeee9);
+.number-info-des {
+  color: var(--secondary-1, #172d58);
   font-family: Nunito Sans;
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 700;
   line-height: 150%; /* 24px */
 }
+.number-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 16px;
+  border: 1px solid var(--primary-2, #ea5626);
+  background: #fff;
+  backdrop-filter: blur(28.5px);
+  padding: 3.5rem 0;
+}
+.number-row {
+  margin-top: 3rem;
+  padding: 0 7rem;
+}
+
 /* sds connection */
 #sds_connection {
   padding: 5rem 0;
 }
 .connection-part {
-  background-image: url("http://softdreams.vn/wp-content/uploads/2023/10/1-7-2.png");
-  height: 44rem;
+  background-image: url("http://softdreams.vn/wp-content/uploads/2023/10/Group-34077.png");
+  height: 47rem;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  border-radius: 8px;
+  padding: 7rem 2rem;
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
 }
 .connection-text {
-  color: var(--primary-2, #ea5626);
-  text-align: center;
+  color: #fff;
   font-family: Nunito Sans;
-  font-size: 3.6rem;
+  font-size: 2.8rem;
   font-style: normal;
   font-weight: 800;
-  line-height: 131.5%; /* 47.34px */
+  line-height: 131.5%; /* 36.82px */
 }
 .connection-btn {
-  border-radius: 8px;
-  background: var(--primary-2, #ea5626);
-  color: #fff;
-  text-align: center;
+  padding: 1rem 2rem;
+  display: inline-block;
+  border-radius: 54px;
+  background: #fff;
+  color: var(--primary-2, #ea5626);
   font-family: Nunito Sans;
-  font-size: 2.4rem;
+  font-size: 20px;
   font-style: normal;
   font-weight: 700;
-  line-height: 150%;
-  border: none;
-  padding: 0.5rem 1rem;
-  margin-top: 2rem;
+  line-height: 131.5%; /* 26.3px */
+  margin-top: 3rem;
 }
 .connection-btn:hover {
   opacity: 0.8;
 }
 .connection-box {
-  border-radius: 16px;
-  border: 1px solid var(--primary-3, #ee7851);
-  background: rgba(255, 255, 255, 0.7);
-
-  /* 1 */
-  box-shadow: 1px 1px 16px 0px rgba(233, 86, 38, 0.3);
-  padding: 4rem 6rem;
 }
 /* sds featured */
 #sds_featured {
@@ -525,6 +555,7 @@ nav .navbar .links li:hover .js-sub-menu {
 /* Đối tác */
 #sds_partner {
   padding: 5rem 0;
+  position: relative;
 }
 
 .partner-box {
@@ -685,17 +716,20 @@ swiper-slide img {
   margin: auto;
 }
 #sds_testimonials {
+  position: relative;
   padding: 5rem 0;
 }
 @media (min-width: 1200px) {
- .swiper-container{
+  .swiper-container {
     padding: 0 20rem !important;
   }
 }
 
 /* Tự hào vinh danh */
 #sds_pride {
+  position: relative;
   padding: 5rem 0;
+
 }
 .pridebox {
   display: flex;
@@ -726,32 +760,78 @@ swiper-slide img {
 
 /* Responsive */
 @media (max-width: 480px) {
-  .pride-lefttree, .pride-righttree {
+  .pride-lefttree,
+  .pride-righttree {
     display: none;
   }
- }
- 
- 
+}
+@media (max-width: 1200px) {
+  .number-row {
+    padding: 0 !important;
+  }
+  .sds-row-content {
+    padding: 0 !important;
+  }
+  .connection-text {
+    font-size: 2.5rem !important;
+  }
+  .connection-btn {
+    padding: 1rem 1rem !important;
+  }
+  .connection-part {
+    height: 34rem;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .sds-row-content {
+    padding: 0 7rem !important;
+  }
+  .connection-part {
+    height: 41rem;
+  }
+}
 
- /* Company Page*/
- /* Road to dreams */
- #sds_roadToDream {
+/* Company Page*/
+/* Đôi nét về Softdreams */
+#sds_somethingAbout {
   padding: 5rem 0;
- }
- .roadToDream-img {
+}
+.sds-row-content {
+  padding: 0 17rem;
+  margin-top: 4rem;
+}
+.sds_row-text {
+  color: var(--gray-1, #151f2f);
+  font-family: Nunito Sans;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 184%;
+}
+.sds_row-text span {
+  color: var(--gray-1, #151f2f);
+  font-family: Nunito Sans;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 184%; /* 29.44px */
+}
+/* Road to dreams */
+#sds_roadToDream {
+  padding: 5rem 0;
+}
+.roadToDream-img {
   display: flex;
   justify-content: center;
   margin-top: 4rem;
- }
- .roadToDream-img img {
+}
+.roadToDream-img img {
   max-width: 50%;
 }
-
 
 /* Core values */
 #sds_coreValues {
   padding: 5rem 0;
-
 }
 .center-col {
   display: flex;
